@@ -3,10 +3,3 @@ Title: A dummy DESCRIPTION file necessary to make travis-ci think this is an R
     package; this will make travis-ci run the contents of _build.sh. This is 
     because travis-ci is currently set up to only work with R packages.
 Version: 0.0.0.9000
-Imports: 
-  rmarkdown,
-  tidyverse,
-  here,
-  fivethirtyeight
-Remotes:
-  moderndive/moderndive
