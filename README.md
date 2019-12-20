@@ -8,7 +8,7 @@ Automating tests of reproducibility of `.Rmd` files within an RStudio Project us
 
 * No explicit activiation of travis-ci required for a GitHub repo if you commit a `.travis.yml` file
 * First time running will take a while to install R and packages and cache them. In particular `tidyverse`: approximately 15min.
-* Students would be responsible for adding all packages used to `DESCRIPTION`:
+* Students would be responsible for adding all packages used to TBD: `DESCRIPTION` or `.travis.yml`:
     + CRAN versions under `Imports`
     + GitHub versions under `Remotes`
 * `here::here()` takes care of macOS, windows, UNIX variation in file path specifications. 
