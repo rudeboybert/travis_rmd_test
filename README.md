@@ -4,7 +4,7 @@
 
 Automating tests of reproducibility of `.Rmd` files within an RStudio Project using travis-ci. 
 
-Things to keep in mind:
+## Things to keep in mind
 
 * No explicit activiation of travis-ci required for a GitHub repo if you commit a `.travis.yml` file
 * First time running will take a while to install R and packages and cache them. In particular `tidyverse`: approximately 15min.
@@ -16,6 +16,6 @@ Things to keep in mind:
 * If students want fancy travis-ci badge above to work, they need to replace `rudeboybert` with their own GitHub login
 
 
-TODO:
+## TODO
 
 * Record a loom screencast demonstrating all of this
