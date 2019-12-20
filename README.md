@@ -7,3 +7,4 @@ Testing travis-ci on R Markdown. Things to keep in mind:
 especially `tidyverse`. Approximately 15min.
 * Students would be responsible for adding all packages used (both CRAN and github versions) to `DESCRIPTION`
 * TODO: Record a loom screencast demonstrating all of this
+* `here::here()` takes care of macOS, windows, UNIX variation in file path specifications. 
