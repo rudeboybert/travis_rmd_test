@@ -1,5 +1,5 @@
 Package: maketraviswork
-Title: A dummy DESCRIPTION file necessary to make travis-ci think this is an R 
+Title: A dummy DESCRIPTION file necessary to trick travis-ci into thinking this is an R 
     package; this will make travis-ci run the contents of _build.sh. This is 
-    because travis-ci is currently set up to only work with R packages.
+    because travis-ci is currently set up for R to only work with packages.
 Version: 0.0.0.9000

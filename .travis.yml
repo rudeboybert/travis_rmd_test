@@ -1,19 +1,22 @@
 language: r
 cache: packages
-# pandoc_version: 1.19.2.1
 
+# Add all CRAN versions of package you used here:
 r_packages:
   - tidyverse
   - here
   - fivethirtyeight
 
+# Add all GitHub versions of packages you used here:
 r_github_packages:
   - moderndive/moderndive
 
-# UNIX change file mode to executable +x
+# You do not need to change anything below:
+
+# This UNIX command changes file mode to executable +x i.e. make a bash script
 before_script:
   - chmod +x ./_build.sh
 
-# Then run this bash script of R commands
+# Run the bash script.
 script:
   - ./_build.sh
