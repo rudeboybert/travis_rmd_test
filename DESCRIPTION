@@ -8,5 +8,3 @@ Imports:
   tidyverse,
   here,
   fivethirtyeight
-Remotes:
-  moderndive/moderndive
