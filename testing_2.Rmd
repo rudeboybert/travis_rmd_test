@@ -1,0 +1,17 @@
+---
+title: "testing 2"
+author: "Albert Y. Kim"
+date: "12/20/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+# library(moderndive)
+glimpse(pennies)
+```
+
