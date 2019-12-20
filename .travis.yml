@@ -2,7 +2,8 @@ language: r
 cache: packages
 # pandoc_version: 1.19.2.1
 
-#r_packages:
+r_packages:
+  - devtools
 #  - tidyverse
 #  - fivethirtyeight
 
