@@ -10,8 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
+# Test: try commenting out library(moderndive) b/c pennies data frame is there
 library(tidyverse)
-# library(moderndive)
-glimpse(pennies)
+library(moderndive)
+glimpse(bowl)
 ```
 
