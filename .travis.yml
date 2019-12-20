@@ -1,0 +1,18 @@
+language: r
+cache: packages
+# pandoc_version: 1.19.2.1
+
+r_packages:
+  - tidyverse
+  - fivethirtyeight
+
+# r_github_packages:
+#  - moderndive/moderndive
+
+# UNIX change file mode to executable +x
+before_script:
+  - chmod +x ./_build.sh
+
+# Run this bash script of R commands
+script:
+  - ./_build.sh
