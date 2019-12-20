@@ -2,9 +2,9 @@ language: r
 cache: packages
 # pandoc_version: 1.19.2.1
 
-r_packages:
-  - tidyverse
-  - fivethirtyeight
+#r_packages:
+#  - tidyverse
+#  - fivethirtyeight
 
 # r_github_packages:
 #  - moderndive/moderndive
