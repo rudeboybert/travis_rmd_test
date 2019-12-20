@@ -15,15 +15,25 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
+```{r load-package}
 library(tidyverse)
-# library(fivethirtyeight)
+library(here)
+library(fivethirtyeight)
 ```
 
 ## Including Plots
 
-```{r}
+```{r plot}
+# For this code block, test it by commenting out line with library(fivethirtyeight)
 ggplot(hate_crimes, aes(x= median_house_inc, share_vote_trump)) +
   geom_point()
 ```
+
+```{r}
+# For this code block, test file paths
+file_path <- here("data", "dem_score.csv")
+dem_score <- read_csv(file_path)
+```
+
+
 

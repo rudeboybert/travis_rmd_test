@@ -1,7 +1,11 @@
-Package: placeholder
-Title: Does not matter.
-Version: 0.0.1
+Package: maketraviswork
+Title: A dummy DESCRIPTION file necessary to make travis-ci think this is an R 
+    package; this will make travis-ci run the contents of _build.sh.
+Version: 0.0.0.9000
 Imports: 
   rmarkdown,
   tidyverse,
+  here,
   fivethirtyeight
+Remotes:
+  moderndive/moderndive
