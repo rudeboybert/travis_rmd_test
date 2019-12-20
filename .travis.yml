@@ -7,8 +7,8 @@ r_packages:
 #  - tidyverse
 #  - fivethirtyeight
 
-# r_github_packages:
-#  - moderndive/moderndive
+r_github_packages:
+  - moderndive/moderndive
 
 # UNIX change file mode to executable +x
 before_script:
