@@ -16,15 +16,15 @@ output:
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(here)
-# library(fivethirtyeight)
+library(fivethirtyeight)
 ```
 
 ## Plots
 
 ```{r plot}
-# In this code block, test travis by commenting out the line
-# library(fivethirtyeight)
-# above, since hate_crimes is a dataset in that package
+# In this code block, test travis by uncommenting out this line
+blah
+
 ggplot(hate_crimes, aes(x= median_house_inc, share_vote_trump)) +
   geom_point()
 ```
