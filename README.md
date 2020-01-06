@@ -8,9 +8,7 @@ Automatically test if `.Rmd` R Markdown files "knit" ✅ or not  ❌ using travi
 
 I welcome your comments, questions, and feedback via a GitHub issue! Shout out to [Chester Ismay](https://github.com/ismayc) for his help with travis-ci.
 
-## Instructions
-
-Take it for a test drive!
+## Take it for a test drive!
 
 * Fork and clone a copy of this repo 
 * Integrate your GitHub account and travis-ci by following steps 1-3 of these [instructions](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci)
@@ -32,8 +30,8 @@ Take it for a test drive!
 * The user is responsible for adding all packages used in any `.Rmd` file to `.travis.yml` as follows:
     + CRAN versions under `r_packages`
     + GitHub versions under `r_github_packages`
-* `here::here()` is used to handle macOS, windows, UNIX variations in file path specifications. 
-* The `_build.sh` bash file is set up to test if every `.Rmd` file in project folder knits or not.
+* `here::here()` is used to handle macOS, windows, and UNIX variations in file path specifications. 
+* The `_build.sh` bash file is set up to test if every `.Rmd` file in the repo/RStudio Project folder knits or not.
 
 
 ## TODO
