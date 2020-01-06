@@ -4,7 +4,7 @@
 
 Automatically test if `.Rmd` R Markdown files "knit" ✅ or not  ❌ using travis-ci. 
 
-If you use this repo's RStudio Project contents as a template for assigning student problem sets and projects (in particular the `.travis.yml` & `_build.sh` files), then students will be able to check for themselves on GitHub whether their work is reproducible by looking at the above "travis status badge."
+**Instructors**: If you use this repo's RStudio Project contents as a template for assigning student problem sets and projects (in particular the `.travis.yml` & `_build.sh` files), then students will be able to check for themselves on GitHub whether their work is reproducible by looking at the above "travis status badge."
 
 Shout out to [Chester Ismay](https://github.com/ismayc) for his help with travis-ci.
 
@@ -19,10 +19,12 @@ Take it for a test drive!
     + The first travis build will take a while (approximately 15 minutes) as travis needs to install R and all packages (in particular `tidyverse`). Because R and package builds get cached however, all subsequent travis builds will be much quicker.
 * Check that travis returns ❌ if all `.Rmd` files don't knit:
     + Edit `test_me.Rmd` so that it does not knit. Commit and push these changes.
-    + After travis checks are done, your "travis status badge" should now indicate that the build fails. Click on "travis status badge" for the report.
+    + You can see real-time updates of the progress of the travis checks at <https://travis-ci.com/YOUR_GUTHUB_USERNAME/travis_rmd_test>.
+    + After travis checks are done, your "travis status badge" should now read "build: failing" in red. Click on "travis status badge" for the report.
 * Check that travis returns ✅ if all `.Rmd` files do knit:
     + Revert the above change to `test_me.Rmd`. Commit and push these changes.
-    + After travis checks are done, your "travis status badge" should now indicate that the build passes. Click on "travis status badge" for the report.
+    + You can see real-time updates of the progress of the travis checks at <https://travis-ci.com/YOUR_GUTHUB_USERNAME/travis_rmd_test>.
+    + After travis checks are done, your "travis status badge" should now read "build: passing" in green. Click on "travis status badge" for the report.
 
 
 ## Things to keep in mind
