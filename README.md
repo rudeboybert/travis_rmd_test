@@ -6,6 +6,7 @@ Automating tests of reproducibility of `.Rmd` files within an RStudio Project us
 
 ## Instructions
 
+* Fork a copy of this repo
 * Integrate GitHub and travis-ci using these [instructions](https://docs.travis-ci.com/user/tutorial/)
 * Trigger first travis build by making a commit. For example, a good first commit would be in line 3 above, change `rudeboybert` to student GitHub login, so that travis badge reflects their builds.
 * First travis build will take a while (approximately 15 minutes) as travis needs to install R and all packages (in particular `tidyverse`). Because R and package builds get cached however, all subsequent travis builds will be much quicker.
