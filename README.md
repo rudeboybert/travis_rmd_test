@@ -8,13 +8,15 @@ Automatically test if `.Rmd` R Markdown files "knit" ✅ or not  ❌ using travi
 
 Take it for a test drive!
 
-* Fork and clone a copy of this repo 
 * If you haven't already, integrate your GitHub account and travis-ci by following steps 1-3 of these [instructions](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci)
-* Trigger the first travis build by pushing a commit. For example, a good first commit would be to edit `README.md` -> Line 3 -> replace both instances of `rudeboybert` with your GitHub login. That way the resulting travis badge you see on GitHub.com reflects the pass/fail status of your repo.
-* The first travis build will take a while (approximately 15 minutes) as travis needs to install R and all packages (in particular `tidyverse`). Because R and package builds get cached however, all subsequent travis builds will be much quicker.
-* Edit `test_me.Rmd` so that it does not knit. Commit and push these changes.
-* Your travis status badge should now indicate that the build fails. Click on the badge for the report.
-* Students would be responsible for adding all packages used in any `.Rmd` file to `.travis.yml` as follows:
+* Fork and clone a copy of this repo 
+* Trigger the first travis build by pushing a commit.
+    + For example, a good first commit would be to edit `README.md` -> Line 3 -> replace both instances of `rudeboybert` with your GitHub login. That way the resulting "travis status badge" you see on GitHub.com reflects the pass/fail status of your repo.
+    + The first travis build will take a while (approximately 15 minutes) as travis needs to install R and all packages (in particular `tidyverse`). Because R and package builds get cached however, all subsequent travis builds will be much quicker.
+* Test the travis detects non-knitting `.Rmd` files
+    + Edit `test_me.Rmd` so that it does not knit. Commit and push these changes.
+    + Your "travis status badge" should now indicate that the build fails. Click on the badge for the report.
+* The user is responsible for adding all packages used in any `.Rmd` file to `.travis.yml` as follows:
     + CRAN versions under `r_packages`
     + GitHub versions under `r_github_packages`
 
