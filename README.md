@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.com/rudeboybert/travis_rmd_test.svg?branch=master)](https://travis-ci.com/rudeboybert/travis_rmd_test)
 
-Automatically test if `.Rmd` R Markdown files "knit" ✅ or not  ❌ using travis-ci. The results are displayed on the above "travis status badge."
+Automatically test if `.Rmd` R Markdown files "knit" ✅ or not  ❌ using travis-ci. 
+
+The results are displayed on the above "travis status badge."
 
 If you use this repo's RStudio Project contents as a template for assigning student problem sets and projects (in particular the `.travis.yml` & `_build.sh` files), then students will be able to check for themselves on GitHub whether their work is reproducible.
 
@@ -17,14 +19,12 @@ Take it for a test drive!
 * Trigger the first travis build by pushing a commit.
     + For example, a good first commit would be to edit `README.md` -> Line 3 -> replace both instances of `rudeboybert` with your GitHub login. That way the resulting "travis status badge" you see on GitHub.com reflects the pass/fail status of your forked repo (and not `rudeboybert`'s).
     + The first travis build will take a while (approximately 15 minutes) as travis needs to install R and all packages (in particular `tidyverse`). Because R and package builds get cached however, all subsequent travis builds will be much quicker.
-* Check that travis returns ❌ if `.Rmd` files don't knit:
+* Check that travis returns ❌ if all `.Rmd` files don't knit:
     + Edit `test_me.Rmd` so that it does not knit. Commit and push these changes.
-    + After travis checks are done, your "travis status badge" should now indicate that the build fails.
-    + Click on "travis status badge" for the report.
-* Check that travis returns ✅ if `.Rmd` files do knit.
+    + After travis checks are done, your "travis status badge" should now indicate that the build fails. Click on "travis status badge" for the report.
+* Check that travis returns ✅ if all `.Rmd` files do knit:
     + Revert the above change to `test_me.Rmd`. Commit and push these changes.
-    + After travis checks are done, your "travis status badge" should now indicate that the build pases.
-    + Click on "travis status badge" for the report.
+    + After travis checks are done, your "travis status badge" should now indicate that the build passes. Click on "travis status badge" for the report.
 
 
 ## Things to keep in mind
