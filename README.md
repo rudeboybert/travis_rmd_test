@@ -12,8 +12,8 @@ Shout out to [Chester Ismay](https://github.com/ismayc) for his help with travis
 
 Take it for a test drive!
 
-* If you haven't already, integrate your GitHub account and travis-ci by following steps 1-3 of these [instructions](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci)
 * Fork and clone a copy of this repo 
+* Integrate your GitHub account and travis-ci by following steps 1-3 of these [instructions](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci)
 * Trigger the first travis build by pushing a commit.
     + For example, a good first commit would be to edit `README.md` -> Line 3 -> replace both instances of `rudeboybert` with your GitHub login. That way the resulting "travis status badge" you see on GitHub.com reflects the pass/fail status of your forked repo (and not `rudeboybert`'s).
     + The first travis build will take a while (approximately 15 minutes) as travis needs to install R and all packages (in particular `tidyverse`). Because R and package builds get cached however, all subsequent travis builds will be much quicker.
