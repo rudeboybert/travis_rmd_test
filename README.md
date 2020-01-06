@@ -4,9 +4,7 @@
 
 Automatically test if `.Rmd` R Markdown files "knit" ✅ or not  ❌ using travis-ci. 
 
-The results are displayed on the above "travis status badge."
-
-If you use this repo's RStudio Project contents as a template for assigning student problem sets and projects (in particular the `.travis.yml` & `_build.sh` files), then students will be able to check for themselves on GitHub whether their work is reproducible.
+If you use this repo's RStudio Project contents as a template for assigning student problem sets and projects (in particular the `.travis.yml` & `_build.sh` files), then students will be able to check for themselves on GitHub whether their work is reproducible by looking at the above "travis status badge."
 
 Shout out to [Chester Ismay](https://github.com/ismayc) for his help with travis-ci.
 
