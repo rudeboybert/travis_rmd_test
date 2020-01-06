@@ -1,36 +1,38 @@
 ---
-title: "testing"
-author: "Albert Y. Kim"
-date: "12/20/2019"
-output: html_document
+title: "Test me!"
+author: "Albert Y. Kim & Chester Ismay"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+    df_print: kable
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r load-package}
 library(tidyverse)
 library(here)
 library(fivethirtyeight)
 ```
 
-## Including Plots
+## Plots
 
 ```{r plot}
-# For this code block, test it by commenting out line with library(fivethirtyeight)
+# In this code block, test travis by commenting out the line
+# library(fivethirtyeight)
+# above, since hate_crimes is a dataset in that package
 ggplot(hate_crimes, aes(x= median_house_inc, share_vote_trump)) +
   geom_point()
 ```
 
 ```{r}
-# For this code block, test file paths
+# In this code block, test that all filepaths work
 file_path <- here("data", "dem_score.csv")
 dem_score <- read_csv(file_path)
 ```

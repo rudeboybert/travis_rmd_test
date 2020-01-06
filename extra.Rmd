@@ -1,18 +1,27 @@
 ---
-title: "testing 2"
-author: "Albert Y. Kim"
-date: "12/20/2019"
-output: html_document
+title: "Extras"
+author: "Albert Y. Kim & Chester Ismay"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+    df_print: kable
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(moderndive)
 ```
 
 ```{r}
-# Test: try commenting out library(moderndive) b/c pennies data frame is there
-library(tidyverse)
-library(moderndive)
+# Test: try commenting out library(moderndive) b/c bowl data frame is there
 glimpse(bowl)
 ```
 
