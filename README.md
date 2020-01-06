@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/rudeboybert/travis_rmd_test.svg?branch=master)](https://travis-ci.com/rudeboybert/travis_rmd_test)
 
-Automatically test if `.Rmd` R Markdown files "knit" ✅ or not  ❌ using travis-ci. 
+Automatically test if `.Rmd` R Markdown files "knit" ✅ or not  ❌ using travis-ci on GitHub. 
 
 **Instructors**: If you use this repo's RStudio Project contents as a template for assigning student problem sets and projects (in particular the `.travis.yml` & `_build.sh` files), then students will be able to check for themselves on GitHub whether their work is reproducible by looking at the above "travis status badge."
 
