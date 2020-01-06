@@ -23,7 +23,7 @@ library(fivethirtyeight)
 
 ```{r plot}
 # In this code block, test travis by uncommenting out this line
-blah
+# blah
 
 ggplot(hate_crimes, aes(x= median_house_inc, share_vote_trump)) +
   geom_point()
